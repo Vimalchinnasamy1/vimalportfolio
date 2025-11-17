@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vimal 's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', Arial, sans-serif; background: #f8f9fa; color: #222; margin: 0; }
+    header { background: #fff; box-shadow: 0 2px 8px #007bff22; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 0 32px; }
+    .logo { font-size: 2rem; font-weight: 700; color: #007bff; letter-spacing: 1px; }
+    .logo span { color: #222; font-weight: 400; }
+    nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+    nav ul li a { text-decoration: none; color: #222; font-weight: 500; padding: 8px 16px; border-radius: 4px; transition: background .2s, color .2s; }
+    nav ul li a:hover, nav ul li a.active { background: #007bff; color: #fff; }
+    .hero { background: linear-gradient(90deg,#007bff22 0%,#fff 100%); padding: 48px 0 32px 0; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+    .hero p { font-size: 1.2rem; color: #555; margin-bottom: 24px; }
+    .profile-pic { width: 120px; height: 120px; border-radius: 50%; box-shadow: 0 2px 8px #007bff44; margin-bottom: 16px; }
+    .resume-buttons { display: flex; gap: 16px; justify-content: center; margin-bottom: 16px; }
+    .btn { background: #007bff; color: #fff; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-weight: 500; transition: background .2s; }
+    .btn:hover { background: #0056b3; }
+    .section { max-width: 900px; margin: 32px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 16px #007bff11; padding: 32px 24px; }
+    .section-title { font-size: 1.7rem; color: #007bff; margin-bottom: 18px; }
+    .edu-container, .skills-container, .cert-container, .lang-container, .projects-container { display: flex; flex-wrap: wrap; gap: 24px; }
+    .edu-card, .skill-card, .cert-card, .lang-card, .project-card { background: #f0f8ff; border-radius: 8px; box-shadow: 0 2px 8px #007bff22; padding: 18px 16px; flex: 1 1 220px; min-width: 180px; transition: box-shadow .2s, transform .2s; }
+    .edu-card:hover, .skill-card:hover, .cert-card:hover, .lang-card:hover, .project-card:hover { box-shadow: 0 4px 16px #007bff44; transform: translateY(-4px) scale(1.03); }
+    .project-card h3 { margin-top: 0; }
+    .contact-section { text-align: center; }
+    .contact-info { display: flex; gap: 24px; justify-content: center; margin-top: 12px; }
+    .contact-icon { font-size: 2rem; background: #007bff22; border-radius: 50%; padding: 12px; color: #007bff; transition: background .2s, color .2s; text-decoration: none; }
+    .contact-icon:hover { background: #007bff; color: #fff; }
+    footer { background: #222; color: #fff; text-align: center; padding: 18px 0; margin-top: 32px; border-radius: 0 0 12px 12px; }
+    @media (max-width: 700px) {
+      nav { flex-direction: column; gap: 12px; }
+      .section { padding: 18px 8px; }
+      .edu-container, .skills-container, .cert-container, .lang-container, .projects-container { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Vimal <span>Portfolio</span></h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="image.png" alt="Vimal's Photo" class="profile-pic">
+    <h1>Hi, I'm <span style="color:#007bff">Vimal</span></h1>
+    <p>Student | Aspiring Software Engineer | Web Developer | Data Analytics Enthusiast</p>
+    <div class="resume-buttons">
+      <a href="resume.pdf" target="_blank" class="btn">📄 View Resume</a>
+      <a href="resume.pdf" download class="btn">⬇️ Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="content">
+      <img src="image.png" alt="Vimal's Photo" class="profile-pic">
+      <div class="text">
+        <h1>Hi, I'm <span>Vimal</span></h1>
+        <p>I'm a passionate student and aspiring software engineer. I love web development, data analytics, and building interactive projects.</p>
+        <div class="resume-buttons">
+          <a href="resume.pdf" target="_blank" class="btn">📄 View Resume</a>
+          <a href="resume.pdf" download class="btn">⬇️ Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-container">
+      <div class="edu-card">
+        <h3>B.E. Computer Science & Engineering</h3>
+        <p><strong>M. Kumarasamy College of Engineering</strong></p>
+        <p>Expected Graduation: 2026</p>
+        <p>CGPA: 8.5</p>
+      </div>
+      <div class="edu-card">
+        <h3>Higher Secondary Education</h3>
+        <p><strong>XYZ Matriculation School</strong></p>
+        <p>Year: 2022 | Percentage: 92%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Flask</div>
+      <div class="skill-card">PHP</div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-container">
+      <div class="cert-card">📘 Introduction to Excel - Coursera</div>
+      <div class="cert-card">📗 Big Data Computing - NPTEL</div>
+      <div class="cert-card">📕 Data Analytics with Python - NPTEL</div>
+      <div class="cert-card">📙 Industrial IoT 4.0 - NPTEL</div>
+      <div class="cert-card">📒 IBM Data Science Tools - Coursera</div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section id="languages" class="section">
+    <h2 class="section-title">Languages</h2>
+    <div class="lang-container">
+      <div class="lang-card">English - Professional Proficiency</div>
+      <div class="lang-card">Japanese - JLPT N5 (Preparing N3)</div>
+      <div class="lang-card">Tamil - Native</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>EduConnect Portal</h3>
+        <p>Student-faculty communication portal for campus updates and assignment submissions.</p>
+      </div>
+      <div class="project-card">
+        <h3>Outfit Recommender</h3>
+        <p>Website prototype recommending men’s outfits based on body type and measurements.</p>
+      </div>
+      <div class="project-card">
+        <h3>Stock Prediction Dashboard</h3>
+        <p>Flask-based dashboard predicting stock trends using data analytics and APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Feel free to reach out via email, GitHub, or LinkedIn:</p>
+    <div class="contact-info">
+      <a href="mailto:sai@gmail.com" class="contact-icon">📧</a>
+      <a href="https://github.com/sai" target="_blank" class="contact-icon">💻</a>
+      <a href="https://linkedin.com/in/sai" target="_blank" class="contact-icon">🔗</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Vimal. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" style="display:none;position:fixed;bottom:30px;right:30px;padding:10px 16px;font-size:18px;border-radius:50%;background:#007bff;color:#fff;border:none;cursor:pointer;z-index:1000;">↑</button>
+
+  <script>
+// Smooth scroll for nav links
+for(const link of document.querySelectorAll('nav a')){
+  link.addEventListener('click',e=>{
+    const href=link.getAttribute('href');
+    if(href.startsWith('#')){
+      e.preventDefault();
+      document.querySelector(href)?.scrollIntoView({behavior:'smooth'});
+    }
+  });
+}
+// Skills hover effect
+for(const card of document.querySelectorAll('.skill-card')){
+  card.addEventListener('mouseenter',()=>{card.style.background='#007bff';card.style.color='#fff';});
+  card.addEventListener('mouseleave',()=>{card.style.background='';card.style.color='';});
+}
+// Expand/collapse projects
+for(const card of document.querySelectorAll('.project-card')){
+  card.style.cursor='pointer';
+  card.addEventListener('click',()=>{
+    card.classList.toggle('expanded');
+  });
+}
+// Contact tooltips
+for(const icon of document.querySelectorAll('.contact-icon')){
+  icon.title=icon.href.includes('mailto')?'Email':icon.href.includes('github')?'GitHub':'LinkedIn';
+}
+// Back to Top button
+const topBtn=document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{
+  topBtn.style.display=window.scrollY>300?'block':'none';
+});
+topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+  </script>
+
+  <style>
+.skill-card:hover{box-shadow:0 2px 8px #007bff44;transform:scale(1.05);transition:.2s;}
+.project-card{transition:.2s;}
+.project-card.expanded{background:#f0f8ff;border:2px solid #007bff;box-shadow:0 2px 8px #007bff44;transform:scale(1.03);}
+.contact-icon{position:relative;}
+.contact-icon:hover::after{content:attr(title);position:absolute;bottom:120%;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:2px 8px;border-radius:4px;font-size:12px;white-space:nowrap;}
+#backToTop:hover{background:#0056b3;}
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.logo span {
+  color: #00adb5;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00adb5;
+}
+
+/* Section General */
+.section {
+  padding: 100px 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #00adb5;
+}
+
+/* About Section */
+#about .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00adb5;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.text h1 {
+  font-size: 32px;
+}
+
+.text span {
+  color: #00adb5;
+}
+
+.text p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Resume Buttons */
+.resume-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.resume-buttons .btn {
+  background: #00adb5;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.resume-buttons .btn:hover {
+  background: #008c96;
+  transform: scale(1.05);
+}
+
+/* Education */
+.edu-container, .skills-container, .cert-container, .lang-container, .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.edu-card, .skill-card, .cert-card, .lang-card, .project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.edu-card:hover, .skill-card:hover, .cert-card:hover, .lang-card:hover, .project-card:hover {
+  transform: translateY(-8px);
+  background: #00adb5;
+  color: #fff;
+}
+
+/* Contact */
+.contact-section {
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-icon {
+  font-size: 36px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
